@@ -1,0 +1,406 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>竇啟豪Dou,chi-hao 個人網頁</title>
+
+<link rel="stylesheet" type="text/css" media="all" href="css/mycss.css">
+<script type="text/javascript" src="js/jquery-1.11.1.min.js" ></script>
+
+<!-- menu -->
+<link rel="stylesheet" type="text/css" media="all" href="menu/css/stylesNew.css">
+
+<script type="text/javascript">
+$(function(){
+  $('a[href="#"]').on('click', function(e){
+    e.preventDefault();
+  });
+  
+  $('#menu > li').on('mouseover', function(e){
+    $(this).find("ul:first").show();
+    $(this).find('> a').addClass('active');
+  }).on('mouseout', function(e){
+    $(this).find("ul:first").hide();
+    $(this).find('> a').removeClass('active');
+  });
+  
+  $('#menu li li').on('mouseover',function(e){
+    if($(this).has('ul').length) {
+      $(this).parent().addClass('expanded');
+    }
+    $('ul:first',this).parent().find('> a').addClass('active');
+    $('ul:first',this).show();
+  }).on('mouseout',function(e){
+    $(this).parent().removeClass('expanded');
+    $('ul:first',this).parent().find('> a').removeClass('active');
+    $('ul:first', this).hide();
+  });
+});
+</script>
+
+<!-- menu end -->
+
+<!-- tinycircleslider -->
+<link rel="stylesheet" href="tinycircleslider/css/tinycircleslider.css" type="text/css" media="screen"/>
+
+<script type="text/javascript" src="tinycircleslider/js/jquery.tinycircleslider.js"></script>
+
+<script type="text/javascript">
+		$(document).ready(function()
+		{
+			$('#rotatescroll').tinycircleslider({ 
+			interval: true, 
+			dotsSnap: true, 
+			dotsHide: false 
+			});		
+		});
+</script>
+
+<!-- tinycircleslider end -->
+
+<!-- skill schedule -->
+
+<link rel="stylesheet" href="schedule/css/jquery.lineProgressbar.css">
+
+<script src="schedule/js/jquery.lineProgressbarfix.js"></script>
+
+<script type="text/javascript">
+		$(function(){
+			var lineshow = 0;
+			$(window).scroll(function(){
+			if($(this).scrollTop() > 300 && lineshow == 0){
+			$('#progressbar1').LineProgressbar({
+				percentage: 75,
+				ShowProgressCount: false,
+				duration: 1000,
+				fillBackgroundColor: '#0089A7',
+				height: '10px',
+				radius: '15px'
+			});
+			$('#progressbar2').LineProgressbar({
+				percentage: 75,
+				ShowProgressCount: false,
+				duration: 1000,
+				fillBackgroundColor: '#0089A7',
+				height: '10px',
+				radius: '15px'
+			});
+			$('#progressbar3').LineProgressbar({
+				percentage: 50,
+				ShowProgressCount: false,
+				duration: 1000,
+				fillBackgroundColor: '#0089A7',
+				height: '10px',
+				radius: '15px'
+			});
+			$('#progressbar4').LineProgressbar({
+				percentage: 35,
+				ShowProgressCount: false,
+				duration: 1000,
+				fillBackgroundColor: '#0089A7',
+				height: '10px',
+				radius: '15px'
+			});
+			lineshow = 1;
+			}
+			});
+		})
+</script>
+<!-- skill schedule end -->
+
+<!-- time experience -->
+<link rel="stylesheet" media="screen" href="time/css/timelinestyle.css" />
+
+<script src="time/js/jquery.timelinr-0.9.6.js"></script>
+
+<script>
+	$(function(){
+		$().timelinr({
+			startAt: '4'
+		})
+	});
+</script>
+<!-- time experience end -->
+
+
+</head>
+
+<body>
+<div id="container">
+
+<!-- top -->
+<div class="topimg"><a href="index.html"><img src="image/Top.png" width="130" height="60" /></a></div>
+<!-- top end -->
+
+<!-- menu -->
+<div>
+<nav>
+  <div class="wrapper">
+      <ul id="menu" class="clearfix">
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="unity_hemera.html">Unity作品</a></li>
+        <li><a href="web_works.html">網站作品</a></li>
+        <li><a href="#">美術作品</a>
+          <ul>
+            <li><a href="#">3D建模</a></li>
+            <li><a href="#">2D平面</a></li>
+          </ul>
+        </li>
+        <li><a href="#">其他作品</a>
+          <ul>
+            <li><a href="#"></a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">聯絡我</a></li>
+      </ul>
+    </div>
+</nav>
+</div>
+<!-- menu end -->
+
+<div id="centercontainer">
+
+<!-- introduction -->
+<div class="frame">
+	<div class="middleframe">
+    	<div class="smallframe">
+        
+       
+        <div class="introicon">
+          <img src="image/bg-businessman.png" width="40" height="40" />
+        </div>      
+        
+        <!--
+        <div class="introcontent">
+        <div class="title">
+        <p>自傳與簡歷</p>
+        </div>
+        <div class="text">
+        <p>這裡是內容</p>
+        </div>
+        </div>
+        -->
+        
+        <div class="introcontent">
+        <p class="title">自傳與簡歷</p>
+        <div class="separateline"></div>
+        <p class="text">&emsp;&emsp;我是竇啟豪，畢業於實踐大學資訊模擬與設計學系，目前擅長於網頁前端建構與遊戲程式設計。
+        <br>
+        <br>
+        &emsp;&emsp;求學期間便有著網頁開發經驗，協助教授架設個人網頁，更新與維護三個系所的系網等，同時畢業專題是使用Unity3D製作PC動作遊戲，負責的是程式的撰寫與團隊的隊長。在過程中，我了解程式的撰寫並非一蹴而就的，透過一次次的錯誤與修正，培養出獨自解決問題的能力，同時身為隊長，我也學會與隊員間的溝通與協調，同時活用每個組員的能力分配任務並提高效率，一同進步成長。
+        <br>
+        <br>
+        &emsp;&emsp;透過自學不斷加強自身能力，對於新技術也有著極高的學習熱忱，同時重視團隊合作，對所負責項目也會全力以赴完成，期許能將技術能力活用於未來職場中。
+        </p>
+        </div>
+        
+        </div>
+        
+        <!-- tinycircleslider -->
+        <div class="smallframe">
+        <div class="introtinycircles">
+        
+        <div id="rotatescroll">
+		<div class="viewport">
+			<ul class="overview">
+				<li><a href="#"><img src="image/Dou/Dou01.png" /></a></li>
+				<li><a href="#"><img src="image/Dou/Dou02.png" /></a></li>
+				<li><a href="#"><img src="image/Dou/Dou03.png" /></a></li>
+			</ul>
+		</div>
+
+		<div class="dot"></div>
+		<div class="overlay"></div>
+		<div class="thumb"></div>
+		</div>
+        
+        </div>
+        </div>
+        <!-- tinycircleslider end -->
+        
+	</div>
+</div>
+<!-- introduction end -->
+
+<!-- skill -->
+<div class="frame">
+	<div class="middleframe">
+        <!-- skill schedule -->
+    	<div class="smallframe">
+        
+        <div class="skillleftcontent">
+        <div class="textouterframe">
+        <div class="selfMadeLabel">Unity , C#</div>
+	    <div class="selfMadeTriangle"></div> 
+        </div>
+        <div class="jq22-content">
+	    <div id="progressbar1"></div>
+        </div>
+
+        <div class="textouterframe">
+        <div class="selfMadeLabel">Dreamweaver , CSS</div>
+	    <div class="selfMadeTriangle"></div> 
+        </div>
+        <div class="jq22-content">
+	    <div id="progressbar2"></div>
+        </div>
+
+        <div class="textouterframe">
+        <div class="selfMadeLabel">Maya , 3ds Max</div>
+	    <div class="selfMadeTriangle"></div> 
+        </div>
+        <div class="jq22-content">
+	    <div id="progressbar3"></div>
+        </div>
+        
+        <div class="textouterframe">
+        <div class="selfMadeLabel">Photoshop</div>
+	    <div class="selfMadeTriangle"></div> 
+        </div>
+        <div class="jq22-content">
+	    <div id="progressbar4"></div>
+        </div>
+        </div>
+
+        </div>
+        <!-- skill schedule end -->
+        
+        <div class="smallframe">
+        
+        <div class="skillicon">
+          <img src="image/bg-skill.png" width="40" height="40" /> 
+        </div>
+        
+        <div class="skillrightcontent">
+        <p class="title">專長</p>
+        <div class="separateline"></div>
+        <p class="text">
+        <br>
+        &#8226;&emsp;使用unity及C#語法開發第三人稱動作PC遊戲
+        <br>
+        <br>
+        &#8226;&emsp;善用Dreamweaver+CSS規劃網頁前端樣式
+        <br>
+        <br>
+        &#8226;&emsp;Maya或3ds&nbsp;Max製作場景物件建模
+        <br>
+        <br>
+        &#8226;&emsp;Photoshop繪製網頁素材
+        </p>
+        </div>
+        
+        </div>    
+	</div>
+</div>
+<!-- skill end -->
+
+<!-- experience -->
+<div class="frame">
+	<div class="middleframe">
+    	<div class="experienceframe">
+        
+        <div class="introicon">
+          <img src="image/calendar.png" width="40" height="40" />
+        </div>
+        
+        <div class="experiencecontent">
+        <p class="title">經歷與目標</p>
+        <div class="separateline"></div>
+        </div>
+
+        </div>
+        
+        
+        <!-- time experience -->
+        
+        <div id="timeline">
+   			<ul id="dates">
+      			<li><a href="#">2013年9月</a></li>
+      			<li><a href="#">2014年6月~2015年6月</a></li>
+      			<li><a href="#">2015年9月</a></li>
+      			<li><a href="#">2016年9月</a></li>
+      			<li><a href="#">2017年5月</a></li>
+      			<li><a href="#">2017年6月~2018年2月</a></li>
+      			<li><a href="#">2018年3月</a></li>
+      			<li><a href="#">2019年1月</a></li>
+   			</ul>
+   			<ul id="issues">
+      			<li id="date1">
+        			<p>入取實踐大學資訊模擬與設計學系</p>
+      			</li>
+      			<li id="date2">
+         			<p>
+                    &#8226;&emsp;學習基本美術概念、素描
+                    <br><br>
+                    &#8226;&emsp;使用3ds max和Maya建造場景及物件
+                    <br><br>
+                    &#8226;&emsp;學習Html、CSS、Unity、C#
+                  </p>
+      			</li>
+      			<li id="date3">
+         			<p>
+                    &#8226;&emsp;使用Unity製作畢業專題Hemera
+                    <br><br>
+                    &#8226;&emsp;科技部工讀，協助教授製作個人網站
+                  </p>
+      			</li>
+      			<li id="date4">
+         			<p>
+                    &#8226;&emsp;協助資通、會計、資設系更新系所系網
+                    <br><br>
+                    &#8226;&emsp;畢業專題展演
+                    <br><br>
+                    &#8226;&emsp;參與駁二_青春設計節、高雄展覽館_放視大賞
+                  </p>
+      			</li>
+      			<li id="date5">
+         			<p>
+                    &#8226;&emsp;2017放視大賞&emsp;遊戲類PC組&emsp;二次入圍
+                    <br><br>
+                    &#8226;&emsp;第四屆南區大專資訊專題競賽&emsp;多媒體與數位內容組&emsp;佳作
+                    <br><br>
+                    &#8226;&emsp;2017全國資訊科技應用研討會&emsp;數位內容組&emsp;最佳潛力獎
+                  </p>
+      			</li>
+      			<li id="date6">
+         			<p>
+                    &#8226;&emsp;實踐大學資訊模擬與設計學系&emsp;畢業
+                    <br><br>
+                    &#8226;&emsp;台中后里586旅戰一營&emsp;結訓
+                  </p>
+      			</li>
+      			<li id="date7">
+         			<p>&#8226;&emsp;製作個人網頁</p>
+      			</li>
+      			<li id="date8">
+         			<h1>未來目標</h1>
+                    <p>
+                    &#8226;&emsp;學習jquery語法與後台程式
+                    <br><br>
+                    &#8226;&emsp;學習使用Xcode設計IOS&emsp;app
+                    <br><br>
+                    &#8226;&emsp;學習Googleplay&emsp;app上架方式與Unity插入廣告
+                    </p>
+      			</li>
+   			</ul>
+   		<div id="grad_left"></div>
+   		<div id="grad_right"></div>
+   		<a href="#" id="next">+</a> <!-- optional -->
+   		<a href="#" id="prev">-</a> <!-- optional -->
+		</div>
+       
+    
+        <!-- time experience end -->
+	</div>
+</div>
+<!-- experience end -->
+
+</div>
+
+<div id="bottomframe">
+<p style="margin-top:40px; margin-left:80%; font-family: Microsoft JhengHei; color:#FFF;">&copy;2018 Dou,Chi-Hao</p>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+img { border: 0; }
+
+/* Tiny Circleslider */
+#rotatescroll { height:300px; position:relative; width:300px; }
+#rotatescroll .viewport{ height:300px; position: relative; margin:0 auto; overflow:hidden; width:300px; pointer-events: none }
+#rotatescroll .overview { position: absolute; width: 798px; list-style: none; margin: 0; padding: 0;  left: 0; top: 0; }
+#rotatescroll .overview li { height:300px; width:300px; float: left; position: relative; }
+#rotatescroll .overlay {background:url(../image/bg-rotatescroll4.png) no-repeat 0 0; pointer-events: none; position: absolute; left: 0; top: 0; height:300px; width:300px; }
+#rotatescroll .thumb { background:url(../image/thumb01.png) no-repeat 50% 50%; touch-action: none; -ms-touch-action: none; position: absolute; top: -3px; cursor: pointer; left: 137px; width: 100px; z-index: 200;  height: 100px; }
+
+#rotatescroll .dot { cursor: pointer; text-indent: -999em; overflow: hidden; height: 90px; width: 90px; position: absolute;  left: 0; top: 0; z-index: 100; }
+#rotatescroll .dot-1 { background:url(../image/dot01.png) no-repeat 0 0; background-size:contain }
+#rotatescroll .dot-2 { background:url(../image/dot02.png) no-repeat 0 0; background-size:contain }
+#rotatescroll .dot-3 { background:url(../image/dot03.png) no-repeat 0 0; background-size:contain }
+#rotatescroll .dot span { cursor: pointer; }
+
+
+
+
+
+
+
+

@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+html,
+body{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+#container { min-height: 100%; position: relative;}
+#centercontainer { padding-top: 70px; padding-bottom: 70px;}
+#bottomframe { width: 100%; height: 70px; background-color: #0089A7; position: absolute; bottom: 0;}
+
+.topimg { position: fixed; top: 5px; left: 100px; width: 130px; height: 60px; z-index: 1000; }
+.frame { width: 100%; height: 500px; margin: 0px; border-bottom: 1px #CCCCCC solid;}
+.middleframe { width: 1000px; height: 100%; margin: auto;}
+.smallframe { width: 500px; height: 100%; margin: 0px; float: left;}
+.title { font-size:36px; font-family: Microsoft JhengHei; font-weight: 500; text-align: left;}
+.text { font-size:16px; font-family: Microsoft JhengHei; color: #666; text-align: justify; line-height: 26px;}
+.separateline { margin: 10px 75px; border-bottom: 2px #0089A7 solid; width: 30px;}
+
+
+.introicon { width: 40px; height: 40px; margin-top: 30px; text-align: center; vertical-align: top; float: left;}
+.introcontent { width: 420px; height: 460px; margin-top: 25px; margin-left: 10px; text-align: left; float: left;}
+.introtinycircles { width: 300px; height: 300px; margin: 100px auto;}
+
+
+.skillleftcontent { width: 500px; height: 300px; margin: 100px auto;}
+.skillicon { width: 40px; height: 40px; margin-top: 30px; margin-left: 90px; text-align: center; vertical-align: top; float: left;}
+.skillrightcontent { width: 350px; height: 350px; margin-top: 25px; margin-left: 10px; text-align: left; float: left;}
+
+
+.experienceframe { width: 1000px; height: 100px; margin: 0 auto;}
+.experiencecontent { width: 400px; height: 70px; margin-top: 25px; margin-left: 10px; text-align: left; float: left;}
+

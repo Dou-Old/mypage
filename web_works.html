@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>竇啟豪Dou,chi-hao 個人網頁</title>
+
+<link rel="stylesheet" type="text/css" media="all" href="css/mycss_web.css">
+<script type="text/javascript" src="js/jquery-1.11.1.min.js" ></script>
+
+<!-- menu -->
+<link rel="stylesheet" type="text/css" media="all" href="menu/css/stylesNew.css">
+
+<script type="text/javascript">
+$(function(){
+  $('a[href="#"]').on('click', function(e){
+    e.preventDefault();
+  });
+  
+  $('#menu > li').on('mouseover', function(e){
+    $(this).find("ul:first").show();
+    $(this).find('> a').addClass('active');
+  }).on('mouseout', function(e){
+    $(this).find("ul:first").hide();
+    $(this).find('> a').removeClass('active');
+  });
+  
+  $('#menu li li').on('mouseover',function(e){
+    if($(this).has('ul').length) {
+      $(this).parent().addClass('expanded');
+    }
+    $('ul:first',this).parent().find('> a').addClass('active');
+    $('ul:first',this).show();
+  }).on('mouseout',function(e){
+    $(this).parent().removeClass('expanded');
+    $('ul:first',this).parent().find('> a').removeClass('active');
+    $('ul:first', this).hide();
+  });
+});
+</script>
+<!-- menu end -->
+
+<!-- originalhover -->
+<link rel="stylesheet" type="text/css" href="originalhovereffects/css/style.css" />
+<link rel="stylesheet" type="text/css" href="originalhovereffects/css/view.css" />
+<!-- originalhover end -->
+
+</head>
+
+<body>
+<div id="container">
+
+<!-- top -->
+<div class="topimg"><a href="index.html"><img src="image/Top.png" width="130" height="60" /></a></div>
+<!-- top end -->
+
+<!-- menu -->
+<div>
+<nav>
+  <div class="wrapper">
+     <ul id="menu" class="clearfix">
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="unity_hemera.html">Unity作品</a></li>
+        <li><a href="web_works.html">網站作品</a></li>
+        <li><a href="#">美術作品</a>
+          <ul>
+            <li><a href="#">3D建模</a></li>
+            <li><a href="#">2D平面</a></li>
+          </ul>
+        </li>
+        <li><a href="#">其他作品</a>
+          <ul>
+            <li><a href="#"></a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">聯絡我</a></li>
+      </ul>
+    </div>
+</nav>
+</div>
+<!-- menu end -->
+
+<div id="centercontainer">
+
+<!-- originalHover -->
+<div class="middleframe">
+	<div class="smallframe">
+    	<div class="icon">
+   	    	<img src="image/drawing.png" width="40" height="40" /> </div>
+        <div class="content">
+        	<a class="title">網站製作</a>
+        </div>
+	</div>
+    
+    <!-- originalhover -->
+    <div class="originalhover">
+    	<div class="view view-first">
+        	<img src="image/Web/Web01.png" width="300" height="250" />
+                 <div class="mask">
+                      <h2>李慶芳老師教學網</h2>
+                      <p>
+                      負責項目<br>
+                      &#8226;&emsp;整體編排設計<br>
+                      &#8226;&emsp;前端程式撰寫<br>
+                      &#8226;&emsp;維護與更新                      
+                      </p>
+                      <a href="http://idv.kh.usc.edu.tw/cflee/" target="_blank" class="info" title="前往網站"></a>
+                 </div>
+        </div>  
+    </div>
+    <!-- originalhover end -->
+</div>
+
+<div class="middleframe">
+	<div class="smallframe">
+    	<div class="icon">
+   	    	<img src="image/tools.png" width="40" height="40" /> </div>
+        <div class="content">
+        	<a class="title">規劃及更新</a>
+        </div>
+	</div>
+    
+    <!-- originalhover -->
+    <div class="originalhover2">
+    	<div class="view view-first">
+        	<img src="image/Web/Web02.png" width="300" height="250" />
+                 <div class="mask">
+                      <h2>實踐大學-資通系系網</h2>
+                      <p>
+                      負責項目<br>
+                      &#8226;&emsp;首頁規劃與設計<br>
+                      &#8226;&emsp;部分前端程式撰寫<br>
+                      &#8226;&emsp;資料更新  
+                      </p>
+                      <a href="http://itc.kh.usc.edu.tw/bin/home.php" target="_blank" class="info" title="前往網站"></a>
+                 </div>
+        </div>  
+    	<div class="view view-first">
+        	<img src="image/Web/Web04.png" width="300" height="250" />
+                 <div class="mask">
+                      <h2>實踐大學-會計系系網</h2>
+                      <p>
+                      負責項目<br>
+                      &#8226;&emsp;首頁規劃與修改<br>
+                      &#8226;&emsp;部分前端程式撰寫<br>
+                      &#8226;&emsp;資料更新
+                      </p>
+                      <a href="http://at.kh.usc.edu.tw/bin/home.php" target="_blank" class="info" title="前往網站"></a>
+                 </div>
+         </div>  
+         <div class="view view-first">
+        	<img src="image/Web/Web03.png" width="300" height="250" />
+                 <div class="mask">
+                      <h2>實踐大學-資設系系網</h2>
+                      <p>
+                      負責項目<br>
+                      &#8226;&emsp;資料更新<br>
+                      <br><br>
+                      </p>
+                      <a href="http://csd.kh.usc.edu.tw/bin/home.php" target="_blank" class="info" title="前往網站"></a>
+                 </div>
+         </div>  
+         <div class="view view-first">
+        	<img src="image/Web/Web05.png" width="300" height="250" />
+                 <div class="mask">
+                      <h2>高雄客庄綠花園之旅</h2>
+                      <p>
+                      負責項目<br>
+                      &#8226;&emsp;整體編排設計<br>
+                      &#8226;&emsp;前端程式撰寫<br>
+                      <br>
+                      </p>
+                      <a href="#" class="info" title="前往網站"></a>
+                 </div>
+         </div>  
+    </div>
+    <!-- originalhover end -->
+</div>
+<!-- originalHover end -->
+
+</div>
+
+<div id="bottomframe">
+<p style="margin-top:40px; margin-left:80%; font-family: Microsoft JhengHei; color:#FFF;">&copy;2018 Dou,Chi-Hao</p>
+</div>
+
+
+</div>
+</body>
+</html>

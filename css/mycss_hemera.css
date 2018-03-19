@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+html,
+body{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+#container { min-height: 100%; position: relative;}
+#centercontainer { padding-top: 70px; padding-bottom: 70px;}
+#bottomframe { width: 100%; height: 70px; background-color: #0089A7; position: absolute; bottom: 0;}
+
+.topimg { position: fixed; top: 5px; left: 100px; width: 130px; height: 60px; z-index: 1000; }
+.frame { width: 100%; height: 500px; margin: 0px; border-bottom: 1px #CCCCCC solid;}
+.middleframe { width: 1000px; height: 300px; margin: auto;}
+.smallframe { width: 500px; height: 100%; margin: 0px; float: left;}
+.title { font-size:36px; font-family: Microsoft JhengHei; font-weight: 500; text-align: left;}
+.text { font-size:16px; font-family: Microsoft JhengHei; color: #666; text-align:justify;}
+
+
+.icon { width: 40px; height: 40px; margin-top: 25px; text-align: center; vertical-align: top; float: left;}
+.content { width: 400px; height: 250px; margin-top: 20px; margin-left: 10px; text-align: left; float: left;}
+
+
+.cameraimgframe { width: 100%; height: 625px; margin: 0; background-color: #f4f4f4; padding-top: 25px;}
+.cameracontainer { margin: 0 auto; width: 1000px; height: 600px;}
+
+.logo { background-image: url(../hemera/image/logo.png); background-size: contain; width: 300px; height: 100px; margin: 15px auto;}
+

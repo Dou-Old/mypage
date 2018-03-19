@@ -1,0 +1,64 @@
+.progressbar {
+    width: 100%;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	position: relative;
+	background-color: #EEEEEE;
+	box-shadow: inset 0px 1px 1px rgba(0,0,0,.1);
+}
+
+.proggress{
+	height: 8px;
+	width: 10px;
+	background-color: #0089A7;
+}
+
+.percentCount{
+	float:right;
+	margin-top: 10px;
+	clear: both;
+	font-weight: bold;
+	font-family: Arial
+}
+.jq22-content{
+	width: 450px;
+	height: 10px;
+	margin-left: 15px; 
+	margin-right: auto;
+	margin-top:5px;
+	text-align: left;
+	/*border: 1px #FF0000 solid;*/
+}
+.selfMadeLabel{
+	display:inline;
+	margin: 0px;
+	background-color: #999;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+	padding-left:10px;
+	color:#FFF;
+	font-size:18px;
+	font-family: Microsoft JhengHei;
+	/*position:relative;
+	top: -55px;*/
+	float:left;
+}
+.selfMadeTriangle{
+	display:inline;
+	width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 0 12px 15px;
+    border-color: transparent transparent transparent #999;
+	/*position:relative;
+	top: -55px;*/
+	float:left;
+}
+.textouterframe {
+	width: 450px;
+	height: 25px;
+	margin-top: 30px;
+	margin-left: 5px;
+	margin-right: auto;
+	/*border: 1px #FF0000 solid;*/
+}

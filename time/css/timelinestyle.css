@@ -1,0 +1,116 @@
+.sociales {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+	#timeline {
+		width: 800px;
+		height: 350px;
+		overflow: hidden;
+		margin: 0px auto;
+		position: relative;
+		background: url(../image/dot.png) left 45px repeat-x;
+	}
+		#dates {
+			width: 800px;
+			height: 60px;
+			overflow: hidden;
+		}
+			#dates li {
+				list-style: none;
+				float: left;
+				width: 150px;
+				height: 51px;
+				text-align: center;
+				background: url(../image/biggerdot.png) center bottom no-repeat;
+			}
+				#dates a {
+					color: #666;
+	                text-decoration: none;
+					font-family: Microsoft JhengHei;
+					line-height: 60px;
+					font-size: 9px;
+				}
+				#dates .selected {
+			        font-size: 14px;
+					color: #0089A7;
+					font-family: Microsoft JhengHei;
+					font-weight: bold;
+				}
+		
+		#issues {
+			width: 800px;
+			height: 350px;
+			overflow: hidden;
+		}	
+			#issues li {
+				width: 800px;
+				height: 350px;
+				list-style: none;
+				float: left;
+			}
+			    #issues li h1 {
+					color: #333;
+					font-size: 24px;
+					font-family: Microsoft JhengHei;
+					font-weight: 600;
+					margin-left: 150px;
+					/*text-shadow: #000 1px 1px 2px;*/
+				}
+				#issues li p {
+					font-size: 16px;
+					font-family: Microsoft JhengHei;
+					color: #666;
+					/*margin-right: 70px;*/
+					margin-left: 200px;
+					margin-top: 50px;
+					font-weight: normal;
+					line-height: 30px;
+					/*text-shadow: #000 1px 1px 2px;*/
+				}
+		
+		#grad_left,
+		#grad_right {
+			width: 30px;
+			height: 350px;
+			position: absolute;
+			top: 0;
+		}
+			#grad_left {
+		        left: 0;
+		        background: url(../image/grad_left_white_small.png) repeat-y;
+			}
+			#grad_right {
+		        right: 0;
+		        background: url(../image/grad_right_white_small.png) repeat-y;
+			}
+		
+		#next,
+		#prev {
+			position: absolute;
+			top: 0;
+			font-size: 70px;
+			top: 170px;
+			width: 22px;
+			height: 38px;
+			background-position: 0 0;
+			background-repeat: no-repeat;
+			text-indent: -9999px;
+			overflow: hidden;
+		}
+			#next:hover,
+			#prev:hover {
+				background-position: 0 -76px;
+			}
+			#next {
+				right: 0;
+				background-image: url(../image/next.png);
+			}
+			#prev {
+				left: 0;
+				background-image: url(../image/prev.png);
+			}
+				#next.disabled,
+				#prev.disabled {
+					opacity: 0.2;
+				}

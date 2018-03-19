@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>竇啟豪Dou,chi-hao 個人網頁</title>
+
+<link rel="stylesheet" type="text/css" media="all" href="css/mycss_contact.css">
+<script type="text/javascript" src="js/jquery-1.11.1.min.js" ></script>
+
+<!-- menu -->
+<link rel="stylesheet" type="text/css" media="all" href="menu/css/stylesNew.css">
+
+<script type="text/javascript">
+$(function(){
+  $('a[href="#"]').on('click', function(e){
+    e.preventDefault();
+  });
+  
+  $('#menu > li').on('mouseover', function(e){
+    $(this).find("ul:first").show();
+    $(this).find('> a').addClass('active');
+  }).on('mouseout', function(e){
+    $(this).find("ul:first").hide();
+    $(this).find('> a').removeClass('active');
+  });
+  
+  $('#menu li li').on('mouseover',function(e){
+    if($(this).has('ul').length) {
+      $(this).parent().addClass('expanded');
+    }
+    $('ul:first',this).parent().find('> a').addClass('active');
+    $('ul:first',this).show();
+  }).on('mouseout',function(e){
+    $(this).parent().removeClass('expanded');
+    $('ul:first',this).parent().find('> a').removeClass('active');
+    $('ul:first', this).hide();
+  });
+});
+</script>
+<!-- menu end -->
+
+
+</head>
+
+<body>
+<div id="container">
+
+<!-- top -->
+<div class="topimg"><a href="index.html"><img src="image/Top.png" width="130" height="60" /></a></div>
+<!-- top end -->
+
+<!-- menu -->
+<div>
+<nav>
+  <div class="wrapper">
+     <ul id="menu" class="clearfix">
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="unity_hemera.html">Unity作品</a></li>
+        <li><a href="web_works.html">網站作品</a></li>
+        <li><a href="#">美術作品</a>
+          <ul>
+            <li><a href="#">3D建模</a></li>
+            <li><a href="#">2D平面</a></li>
+          </ul>
+        </li>
+        <li><a href="#">其他作品</a>
+          <ul>
+            <li><a href="#"></a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">聯絡我</a></li>
+      </ul>
+    </div>
+</nav>
+</div>
+<!-- menu end -->
+
+<div id="centercontainer">
+
+<!-- contact -->
+
+<div class="middleframe">
+	<div class="smallframe">
+    	<div class="contacttop">
+        	<p class="title">地址</p>
+        </div>
+        <div class="contactcenter"></div>
+        <div class="contactbottom">
+        	<p class="text">彰化縣和美鎮</p>
+        </div>
+    </div>
+    <div class="smallframe">
+    	<div class="contacttop">
+        	<p class="title">手機</p>
+        </div>
+        <div class="contactcenter"></div>
+        <div class="contactbottom">
+        	<p class="text">+886 906 372 520</p>
+        </div>
+    </div>
+    <div class="smallframe">
+    	<div class="contacttop">
+        	<p class="title">Email</p>
+        </div>
+        <div class="contactcenter"></div>
+        <div class="contactbottom">
+        	<p class="text">az00612az@gmail.com</p>
+        </div>
+    </div>
+</div>
+
+<!-- contact end -->
+
+</div>
+
+<div id="bottomframe">
+<p style="margin-top:40px; margin-left:80%; font-family: Microsoft JhengHei; color:#FFF;">&copy;2018 Dou,Chi-Hao</p>
+</div>
+
+
+</div>
+</body>
+</html>

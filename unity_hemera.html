@@ -1,0 +1,239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>竇啟豪Dou,chi-hao 個人網頁</title>
+
+<link rel="stylesheet" type="text/css" media="all" href="css/mycss_hemera.css">
+<script type="text/javascript" src="js/jquery-1.11.1.min.js" ></script>
+
+<!-- menu -->
+<link rel="stylesheet" type="text/css" media="all" href="menu/css/stylesNew.css">
+
+<script type="text/javascript">
+$(function(){
+  $('a[href="#"]').on('click', function(e){
+    e.preventDefault();
+  });
+  
+  $('#menu > li').on('mouseover', function(e){
+    $(this).find("ul:first").show();
+    $(this).find('> a').addClass('active');
+  }).on('mouseout', function(e){
+    $(this).find("ul:first").hide();
+    $(this).find('> a').removeClass('active');
+  });
+  
+  $('#menu li li').on('mouseover',function(e){
+    if($(this).has('ul').length) {
+      $(this).parent().addClass('expanded');
+    }
+    $('ul:first',this).parent().find('> a').addClass('active');
+    $('ul:first',this).show();
+  }).on('mouseout',function(e){
+    $(this).parent().removeClass('expanded');
+    $('ul:first',this).parent().find('> a').removeClass('active');
+    $('ul:first', this).hide();
+  });
+});
+</script>
+
+<!-- menu end -->
+
+<!-- camera img -->
+<link rel='stylesheet' id='camera-css'  href="cameramaster/css/camera.css" type='text/css' media='all'>
+
+<script type="text/javascript" src="cameramaster/js/camera.js"></script>
+<script type="text/javascript" src="cameramaster/js/jquery.easing.1.3.js"></script>
+<script>
+	jQuery(function(){
+		jQuery('#camera_wrap_3').camera({
+			fx: 'simpleFade',
+			height: '500px',
+			loaderColor: '#0089A7',
+			loaderOpacity: .5,
+			loaderPadding: 1,
+			pagination: false,
+			pieDiameter: 45,
+			thumbnails: true,
+			imagePath: '../images/',
+			time: 3000,
+			transPeriod: 750
+		});
+	});
+</script>
+ 
+
+<!-- camera img end -->
+
+
+</head>
+
+<body>
+<div id="container">
+
+<!-- top -->
+<div class="topimg"><a href="index.html"><img src="image/Top.png" width="130" height="60" /></a></div>
+<!-- top end -->
+
+<!-- menu -->
+<div>
+<nav>
+  <div class="wrapper">
+      <ul id="menu" class="clearfix">
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="unity_hemera.html">Unity作品</a></li>
+        <li><a href="web_works.html">網站作品</a></li>
+        <li><a href="#">美術作品</a>
+          <ul>
+            <li><a href="#">3D建模</a></li>
+            <li><a href="#">2D平面</a></li>
+          </ul>
+        </li>
+        <li><a href="#">其他作品</a>
+          <ul>
+            <li><a href="#"></a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">聯絡我</a></li>
+      </ul>
+    </div>
+</nav>
+</div>
+<!-- menu end -->
+
+<div id="centercontainer">
+
+<!-- camera img -->
+<div class="cameraimgframe">
+	<div class="cameracontainer">
+    
+        <!-- #camera_wrap_3 -->
+    	<div class="camera_wrap camera_emboss" id="camera_wrap_3">
+        
+            <!-- one -->
+            <div data-thumb="hemera/img_thumb/logo.png" data-src="hemera/img_src/promotionlogo.png">
+            <!--
+            	<iframe src="https://www.youtube.com/embed/YzrP9pr46yk" width="100%" height="100%" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+             -->
+             <iframe width="1000" height="500" src="https://www.youtube.com/embed/94AjWji5N8s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <!-- one end -->
+            
+            <!-- two -->
+          <div data-thumb="hemera/img_thumb/thumb01.png" data-src="hemera/img_src/promotion01.png"></div>
+            <!-- two end -->
+          
+			<!-- three -->
+            <div data-thumb="hemera/img_thumb/thumb02.png" data-src="hemera/img_src/promotion02.png" data-trasPeriod="4000" data-link="http://www.google.com/" data-target="_blank"></div>
+            <!-- three end -->
+            
+            <!-- four -->
+          <div data-thumb="hemera/img_thumb/thumb03.png" data-src="hemera/img_src/promotion03.png" data-trasPeriod="4000" data-link="http://www.google.com/" data-target="_blank"></div>
+            <!-- four end -->
+            
+            <!-- five -->
+          <div data-thumb="hemera/img_thumb/thumb04.png" data-src="hemera/img_src/promotion04.png" data-trasPeriod="4000" data-link="http://www.google.com/" data-target="_blank"></div>
+            <!-- five end -->
+            
+            <!-- six -->
+          <div data-thumb="hemera/img_thumb/thumb05.png" data-src="hemera/img_src/promotion05.png" data-trasPeriod="4000" data-link="http://www.google.com/" data-target="_blank"></div>
+            <!-- six end -->
+                     
+            
+        </div>
+        <!-- #camera_wrap_3 end -->       
+        
+    </div>
+</div>
+<!-- camera img end -->
+
+<!-- logo -->
+<div class="logo"></div>
+<!-- logo end -->
+
+<!-- Hemera content -->
+<div class="middleframe">
+	<div class="smallframe">
+    	<div class="icon">
+          <img src="image/story.png" width="40" height="40" />
+        </div>
+        
+        <div class="content">
+        <p class="title">遊戲介紹</p>
+        <p class="text" style="line-height: 26px;">&emsp;&emsp;Hemera(赫墨拉)是一款將動作遊戲，角色扮演遊戲，解謎遊戲的要素合而為一的作品，主要敘述為了拯救被忌妒所控制的母親、被封印的父親，與破壞處於封印狀態下的其他六原罪，毅然向敵人挑戰。
+        <br>
+        &emsp;&emsp;戰鬥系統、機關、解謎是中心主軸，遊戲中關卡會以不同形式的解謎遊戲與機關交互而成，每個關卡都將是個全新的遊玩方式，玩家需達成各個關卡的目標。
+        </p>
+        </div>
+    </div>
+    <div class="smallframe">
+    	<div class="icon">
+          <img src="image/game.png" width="40" height="40" />
+        </div>
+        
+        <div class="content">
+        <p class="title">特色及玩法</p>
+        <p class="text" style="line-height: 26px;">
+        &emsp;&emsp;女主角赫墨拉擁有操控光明與黑暗的力量，在遊戲中我們須透過光與暗兩種模式的特殊能力與切換，來進行遊戲。
+        <br>
+        &emsp;&emsp;角色的光暗能力為本遊戲極為重要的一個系統，玩家能在隨時進行「光」與「暗」的切換，並且在不同的狀態下角色的操作方式也會有所改變，遊戲場景亦會產生變化，遊戲的關卡中都需要使用此系統作為搭配通關。
+        </p>
+        </div>
+    </div>
+</div>
+<div class="middleframe">
+	<div class="smallframe">
+    	<div class="icon">
+          <img src="image/list.png" width="40" height="40" />
+        </div>
+        
+        <div class="content">
+        <p class="title">負責項目</p>
+        <p class="text">
+        &#8226;&emsp;專題組組長
+        <br><br>
+        &#8226;&emsp;遊戲企劃構想及撰寫
+        <br><br>
+        &#8226;&emsp;遊戲程式設計<br>
+        &emsp;&emsp;&emsp;&ndash;&emsp;角色操控及攝影機控制<br>
+        &emsp;&emsp;&emsp;&ndash;&emsp;遊戲特色玩法<br>
+        &emsp;&emsp;&emsp;&ndash;&emsp;遊戲場景及關卡設計<br> 
+        </p>
+        </div>
+    </div>
+    <div class="smallframe">
+    	<div class="icon">
+          <img src="image/trophy.png" width="40" height="40" />
+        </div>
+        
+        <div class="content">
+        <p class="title">獲得獎項</p>
+        <p class="text">
+        &#8226;&emsp;第四屆南區大專資訊專題競賽<br>
+        &emsp;&emsp;&emsp;多媒體與數位內容組&emsp;佳作
+        <br><br>
+        &#8226;&emsp;2017全國資訊科技應用研討會<br>
+        &emsp;&emsp;&emsp;數位內容組&emsp;最佳潛力獎
+        <br><br>
+        &#8226;&emsp;2017放視大賞&emsp;遊戲類PC組&emsp;二次入圍
+        <br><br>
+        &#8226;&emsp;2016放視大賞&emsp;創意企劃類&emsp;入圍
+        </p>
+        </div>
+    </div>
+</div>
+<!-- Hemera content end -->
+
+</div>
+
+
+
+<div id="bottomframe">
+<p style="margin-top:40px; margin-left:80%; font-family: Microsoft JhengHei; color:#FFF;">&copy;2018 Dou,Chi-Hao</p>
+</div>
+
+
+</div>
+</body>
+</html>
